@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat.in</title>
+
+    <link rel="icon" href="/image/AKASHAT.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .dark .glass {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .card {
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        @media (min-width: 768px) {
+            .card {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-blue-700 to-indigo-500 min-h-screen dark:bg-gray-900 transition-all duration-300">
+
+
+    <header class="glass shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center p-4">
+
+            <h1 class="text-blue-700 font-bold text-xl">🏠 Akshat.in</h1>
+
+            <nav class="hidden md:flex space-x-6 font-medium items-center">
+                <a href="/">Home</a>
+                <a href="https://www.akshatinstitute.com/contact_us.php">About</a>
+                <a
+                    href="https://www.justdial.com/Azamgarh/Akshat-Institute-Of-Management-Technology-Near-Chaudhary-Guest-Housepandey-Bazar-Arazibag/9999P5252-5252-251119163933-X8U3_BZDET">Contact</a>
+
+                <button onclick="toggleDark()" id="darkBtn" class="ml-4 text-xl">🌙</button>
+            </nav>
+
+            <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+        </div>
+
+
+        <div id="mobileMenu" class="hidden md:hidden p-4 space-y-2">
+            <a href="/" class="block">Home</a>
+            <a href="https://www.akshatinstitute.com/contact_us.php" class="block">About</a>
+            <a href="https://www.justdial.com/Azamgarh/Akshat-Institute-Of-Management-Technology-Near-Chaudhary-Guest-Housepandey-Bazar-Arazibag/9999P5252-5252-251119163933-X8U3_BZDET"
+                class="block">Contact</a>
+        </div>
+    </header>
+
+
+    <section class="text-center py-16 px-4">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">
+            Welcome to Akshat Digital World
+        </h1>
+
+        <p class="text-gray-600 text-base sm:text-lg md:text-xl font-semibold dark:text-gray-300 mb-6">
+            All your websites, social media, and resources in one place
+        </p>
+
+        <button class="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 w-full sm:w-auto">
+            Get Started
+        </button>
+    </section>
+
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-8 pb-20">
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="glass card">
+                <h2 class="text-xl font-semibold mb-2">O'Level Notes</h2>
+                <p class="text-gray-600 dark:text-white mb-4">Search & Find Full Notes.</p>
+                <a href="https://www.olevelnotes.com/" target="_blank"
+                    class="block bg-blue-500 text-white py-2 rounded-xl hover:bg-blue-700">Open</a>
+            </div>
+
+            <div class="glass card">
+                <h2 class="text-xl font-semibold mb-2">Akshat Institute</h2>
+                <p class="text-gray-600 dark:text-white mb-4">Watch About Our Branch and facility.</p>
+                <a href="https://www.akshatinstitute.com/" target="_blank"
+                    class="block bg-red-500 text-white py-2 rounded-xl hover:bg-red-700">Open</a>
+            </div>
+
+            <div class="glass card">
+                <h2 class="text-xl font-semibold mb-2">AK IT Test & SOLUTION</h2>
+                <p class="text-gray-600 dark:text-white mb-4">Free online Test & Tutorials.</p>
+                <a href="https://nielitexam.co.in/" target="_blank"
+                    class="block bg-gray-800 text-white py-2 rounded-xl hover:bg-black">Open</a>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+
+            <div class="glass card">
+                <img src="ss.png" class="mx-auto max-w-full h-auto">
+            </div>
+
+
+            <div class="glass card">
+                <h3 class="mb-4 font-semibold">Social Media</h3>
+
+                <div class="flex justify-center space-x-5 text-2xl mb-6">
+                    <i class="fab fa-facebook text-blue-600"></i>
+                    <i class="fab fa-instagram text-pink-500"></i>
+                    <i class="fab fa-twitter text-blue-400"></i>
+                    <i class="fab fa-youtube text-red-500"></i>
+                </div>
+
+                <h2 class="text-xl font-bold mb-4">Important Links</h2>
+
+                <ul class="space-y-2">
+                    <li><a href="https://share.google/qsrpUNNg5DnKcalEq" class="hover:text-blue-600">YouTube Channel</a>
+                    </li>
+                    <li><a href="https://share.google/k08kP0wur0pDPxTay" class="hover:text-blue-600">Instagram Page</a>
+                    </li>
+                    <li><a href="https://whatsapp.com/channel/0029VaIi2P5DuMRYVV7h7v3q"
+                            class="hover:text-blue-600">Whatsapp Page</a></li>
+                    <li><a href="https://t.me/akshat_computer_institute" class="hover:text-blue-600">Telegram Page</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div class="glass card">
+                <h3 class="mb-3 font-semibold">Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.6615020446625!2d83.18072167541095!3d26.07731677715498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991a3523c4e7baf%3A0xff2a13a3d81c704f!2sAkshat%20Institute%20of%20Management%20%26%20Technology!5e0!3m2!1sen!2sin!4v1773631520302!5m2!1sen!2sin"
+                    loading="lazy" class="w-full h-32 rounded" loading="lazy" class="w-full h-32 rounded">
+                </iframe>
+            </div>
+
+        </div>
+
+
+        <div class="glass p-6">
+            <h2 class="text-2xl font-bold mb-4 text-blue-700 text-center">
+                About Akshat Institute of Management & Technology
+            </h2>
+
+            <div class="border-2 border-blue-500 rounded-xl p-5 shadow-lg bg-blue-50">
+
+                <marquee behavior="scroll" direction="left" scrollamount="6" class="text-blue-800 font-semibold mb-4">
+                    🎓 Empowering Future Leaders Through Quality Education | Innovation | Excellence 🎓
+                </marquee>
+
+                <p class="text-gray-700 leading-relaxed mb-3">
+                    <span class="font-semibold text-blue-600">Akshat Institute of Management & Technology</span> is a
+                    forward-thinking educational institution dedicated to providing excellence in
+                    <span class="font-medium">management, technology, and professional education</span>.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed mb-3">
+                    The institute fosters a <span class="font-medium text-blue-600">student-centric environment</span>
+                    supported by experienced faculty, modern infrastructure, and industry-oriented programs
+                    that bridge the gap between <span class="italic">theory and real-world application</span>.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    With a strong focus on <span class="font-medium">innovation, leadership, and skill
+                        development</span>,
+                    Akshat Institute prepares students to become confident professionals and responsible citizens
+                    ready to excel in a competitive global landscape.
+                </p>
+
+            </div>
+            <p>
+                <b>Akshat Institute of Management & Technology</b> is a private computer training and vocational
+                institute
+                located in Azamgarh, Uttar Pradesh, mainly focused on providing practical, skill-based education rather
+                than traditional degree programs. It offers a range of short-term and diploma courses such as <b>CCC,
+                    DCA,
+                    ADCA, O Level (NIELIT), Tally with GST, typing (Hindi and English), and basic to advanced training
+                    in
+                    programming, web development, graphic design, and data analytics.</b> The institute is known for its
+                emphasis on hands-on learning, affordable fee structure, and personalized attention to students, making
+                it a suitable option for beginners or those looking to build job-oriented computer skills for employment
+                or government exam requirements. However, it is important to note that it is not a full-fledged college
+                offering degrees like B.Tech or MBA, and it does not provide large-scale campus placement opportunities
+                like major universities; instead, its primary goal is to enhance practical knowledge and improve
+                employability through technical training.
+
+            </p>
+        </div>
+
+
+        <div class="backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-6 shadow-lg text-white">
+            <h4 class="text-lg font-semibold mb-4 text-center">Gallery</h4>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="dh2.jpg"
+                        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="ss2.jpg"
+                        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="images.jpg"
+                        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="images (1).jpg"
+                        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="imf.jpg"
+                        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+
+                <div class="overflow-hidden rounded-xl shadow-md">
+                    <img src="imf2.jpg"
+                        class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="fixed bottom-0 w-full text-center p-4 bg-black text-white">
+        <p>© 2026 Akshat Institute & Management — All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        function toggleDark() {
+            document.documentElement.classList.toggle("dark");
+            const btn = document.getElementById("darkBtn");
+            btn.textContent = document.documentElement.classList.contains("dark") ? "☀️" : "🌙";
+        }
+    </script>
+
+</body>
+
+</html>
